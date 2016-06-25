@@ -6,13 +6,13 @@
 
 using namespace std;
 
-bool rdiag(char play[][11], int s); // Ïðîâåðÿåò îáðàòíóþ äèàãîíàëü (Íàëè÷èå âûèãðûøà)
-bool ldiag(char play[][11], int s); // Ïðîâåðÿåò äèàãîíàëü
-bool vertical(char play[][11], int s, int x); // Ïðîâåðÿåò âåðòèêàëü
-bool contour(char play[][11], int s, int y); // Ïðîâåðÿåò ãîðèçîíòàëü
-char gaming(int s); // Âûâîäèò 'x' èëè 'o', â çàâèñèìîñòè îò íîìåðà õîäÿùåãî èãðîêà
-int game(char play[][11], int s, char player1[], char player2[]); // Îñíîâíàÿ ôóíêöèÿ ðàáîòû ïðîãðàììû
-int vvod(char play[][11]); // Ââîä ÷èñåë õîäà è ïðîâåðêà íà âîçìîæíîñòü óñòàíîâêè â ýòî ìåñòî
+bool rdiag(char play[][11], int s); 
+bool ldiag(char play[][11], int s); 
+bool vertical(char play[][11], int s, int x); 
+bool contour(char play[][11], int s, int y); 
+char gaming(int s); 
+int game(char play[][11], int s, char player1[], char player2[]); 
+int vvod(char play[][11]); 
 
 void 
 
@@ -124,7 +124,7 @@ int game(char play[][11], int s, char player1[], char player2[]){
 	return s;
 }
 
-int main(){ /* Ââîä èìží èãðîêîâ, ñîçäàíèå ìàññèâà èãðû, î÷èñòêà ïîëÿ èãðû (óñòàíîâêà '.'), öèêëèçàöèÿ èãðû äî ïîáåäû è îêîí÷àíèå ïðîãðàììû */
+int main(){ 
 	setlocale(LC_ALL, "Russian");
 	char player1[32];
 	cout << "Player 1, please enter your name:  ";
